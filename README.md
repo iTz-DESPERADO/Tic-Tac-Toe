@@ -20,3 +20,96 @@ To run this game, you need to have a C compiler installed on your system.
    ```bash
    git clone https://github.com/your-username/tic-tac-toe.git
    cd tic-tac-toe
+Compile the game using the command line:
+
+bash
+Copy code
+gcc tic_tac_toe.c -o tic_tac_toe
+Run the game:
+
+bash
+Copy code
+./tic_tac_toe
+Linux/MacOS
+Ensure you have gcc installed. You can install it via the package manager:
+
+Ubuntu/Debian:
+
+bash
+Copy code
+sudo apt-get install build-essential
+Fedora:
+
+bash
+Copy code
+sudo dnf install gcc
+macOS:
+
+bash
+Copy code
+xcode-select --install
+Clone the repository or download the source files.
+
+bash
+Copy code
+git clone https://github.com/your-username/tic-tac-toe.git
+cd tic-tac-toe
+Compile the game:
+
+bash
+Copy code
+gcc tic_tac_toe.c -o tic_tac_toe
+Run the game:
+
+bash
+Copy code
+./tic_tac_toe
+How to Play
+The game will prompt Player 1 (X) to enter their move by specifying the row and column (e.g., 1 2 for row 1, column 2).
+After Player 1 makes their move, the game will prompt Player 2 (O) to enter their move.
+The game will check for a winner after each turn.
+If all 9 moves are made without a winner, the game will declare a draw.
+After the game ends, you will be asked if you want to play again. Enter y to play another round, or n to exit.
+Example
+bash
+Copy code
+TIC TAC TOE!
+The Game starts in 3
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+
+Player 1 move row and column separated by space: 1 1
+* * * * *
+* X     *
+*       *
+*       *
+* * * * *
+
+Player 2 move row and column separated by space: 1 2
+* * * * *
+* X O   *
+*       *
+*       *
+* * * * *
+
+Player 1 move row and column separated by space: 2 1
+* * * * *
+* X O   *
+* X     *
+*       *
+* * * * *
+
+Player 2 move row and column separated by space: 2 2
+* * * * *
+* X O   *
+* X O   *
+*       *
+* * * * *
+Contributing
+Feel free to fork this repository, open issues, and submit pull requests. Contributions are welcome!
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
