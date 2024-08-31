@@ -16,7 +16,17 @@ To run this game, you need to have a C compiler installed on your system.
 ### Windows
 1. Download and install [MinGW](http://www.mingw.org/) or use [Visual Studio](https://visualstudio.microsoft.com/) with C/C++ support.
 2. Clone the repository or download the source files.
-
+ 
    ```bash
    git clone https://github.com/your-username/tic-tac-toe.git
    cd tic-tac-toe
+3.Compile the game using the command line.
+
+  ```bash
+  gcc tic_tac_toe.c -o tic_tac_toe
+
+4.Run the game.
+
+   ```bash
+  ./tic_tac_toe
+
