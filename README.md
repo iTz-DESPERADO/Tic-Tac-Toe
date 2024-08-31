@@ -21,16 +21,17 @@ To run this game, you need to have a C compiler installed on your system.
    git clone https://github.com/your-username/tic-tac-toe.git
    cd tic-tac-toe
    ```
- 3.Compile the game using the command line.
+3.Compile the game using the command line.
  
    ```bash
    gcc tic_tac_toe.c -o tic_tac_toe
    ```
- 4.Run the game
+4.Run the game
    ```bash
   ./tic_tac_toe
    ```
 ### Linux/MacOS
+
 1.Ensure you have `gcc` installed. You can install it via the package manager:
 
 Ubuntu/Debian:
@@ -65,7 +66,8 @@ gcc tic_tac_toe.c -o tic_tac_toe
 ```
 
 
-#How to Play
+# How to Play
+
 1.The game will prompt Player 1 (X) to enter their move by specifying the row and column (e.g., 1 2 for row 1, column 2).
 
 2.After Player 1 makes their move, the game will prompt Player 2 (O) to enter their move.
@@ -76,7 +78,7 @@ gcc tic_tac_toe.c -o tic_tac_toe
 
 5.After the game ends, you will be asked if you want to play again. Enter y to play another round, or n to exit.
 
-#Example
+# Example
 ```bash
 TIC TAC TOE!
 The Game starts in 3
@@ -114,7 +116,8 @@ Player 2 move row and column separated by space: 2 2
 *       *
 * * * * *
 ```
-#Contributing
+# Contributing
+
 Feel free to fork this repository, open issues, and submit pull requests. Contributions are welcome!
 
 
