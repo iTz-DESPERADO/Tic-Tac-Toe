@@ -155,11 +155,10 @@ void play_game()
         int i = 3;
         printf("TIC TAC TOE!\n");
         printf("\033[1;32m");
-        while (i > 0) 
+        while (i--) 
         {
             printf("\rThe Game starts in %d", i);
             fflush(stdout); 
-            i--;
             Sleep(1000);
         }
         printf("\033[0m");
