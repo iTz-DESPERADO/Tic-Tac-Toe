@@ -9,7 +9,7 @@ char player2 = 'O';
 void play_game();
 void initialize();
 void printArray();
-bool check_move(int x, int y);
+bool check_move(int x, int y); // Corrected function signature
 void player1move();
 void player2move();
 int check_winner();
@@ -69,7 +69,7 @@ void printArray()
     }
 }
 
-bool check_move(int x, int y)
+bool check_move(int x, int y) // Removed arr parameter
 {
     if(x >= 1 && x <= 3 && y >= 1 && y <= 3 && arr[x][y] == ' ')
     {
@@ -84,14 +84,14 @@ void player1move()
     int x, y;
     do {
         printf("Player 1 move row and column separated by space: ");
-        if(scanf("%d %d", &x, &y) == 2) {
+        if(scanf("%d %d", &x, &y) == 2 && check_move(x, y)) {
             break;
         } else {
             printf("Invalid input. Please enter an integer.\n");
             int c;
             while ((c = getchar()) != '\n' && c != EOF);
         }
-    } while(!check_move(x, y));
+    } while(true);
 
     arr[x][y] = player1;
 }
@@ -101,14 +101,14 @@ void player2move()
     int x, y;
     do {
         printf("Player 2 move row and column separated by space: ");
-        if(scanf("%d %d", &x, &y) == 2) {
+        if(scanf("%d %d", &x, &y) == 2 && check_move(x, y)) {
             break;
         } else {
             printf("Invalid input. Please enter an integer.\n");
             int c;
             while ((c = getchar()) != '\n' && c != EOF);
         }
-    } while(!check_move(x, y));
+    } while(true);
 
     arr[x][y] = player2;
 }
