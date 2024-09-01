@@ -9,7 +9,7 @@ char player2 = 'O';
 void play_game();
 void initialize();
 void printArray();
-bool check_move(int x, int y); // Corrected function signature
+bool check_move(int x, int y);
 void player1move();
 void player2move();
 int check_winner();
@@ -69,7 +69,7 @@ void printArray()
     }
 }
 
-bool check_move(int x, int y) // Removed arr parameter
+bool check_move(int x, int y)
 {
     if(x >= 1 && x <= 3 && y >= 1 && y <= 3 && arr[x][y] == ' ')
     {
